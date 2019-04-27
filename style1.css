@@ -1,0 +1,113 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #fff;
+    background: url('img/bg.png') no-repeat;
+    background-size: cover;
+}
+header.upperLogo, h2{
+    text-align:center;
+    color: #dedede;
+    font-weight: normal;
+}
+header.upperLogo{
+    padding-top: 30px;
+}
+img.logoimg{
+    opacity: 0.3;
+}
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+form.flex{
+    flex-direction: column;
+}
+div.flex.row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:40px;
+    margin-bottom: 5px;
+}
+.container{
+    width: 960px;
+    margin:auto;
+    min-height: 720px;
+    max-height: 1300px;
+    align-items: center;
+    flex-flow: column wrap
+}
+section.form-container{
+    width: 400px;
+}
+.form-content{
+    border:18px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    padding: 15px;
+}
+.form-item{
+    border:1px solid #dedede;
+    border-radius: 3px;
+    padding: 5px;
+    min-height: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.inputs{
+    border:none;
+    background: transparent;
+    outline: 0;
+}
+label{
+    display:none;
+    font-size: 15px;
+    color: black;
+}
+label.visible{
+    display:inline;
+}
+.btn{
+    display: block;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 3px;
+    background-color: lawngreen;
+    color: seashell;
+    font-size: 18px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.btnshort{
+    width: 40%;
+}
+.btndisabled{
+    opacity: 0.5;
+    cursor: default;
+}
+.btnred{
+    background-color: #e93f3d;
+    border-color: red;
+}
+.form-item span{
+    color: black;
+    display:inline-block;
+    width: 45px;
+    text-align:center;
+    border-right: 1px solid black;
+    padding: 1px 1px 1px 0;
+}
+textarea.msg_1{
+    height: 160px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow:hidden;
+    resize: none;
+}
+footer{
+    padding: 50px 20px;
+}
