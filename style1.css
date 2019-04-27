@@ -5,11 +5,12 @@ body{
     background-color: #fff;
     background: url('img/bg.png') no-repeat;
     background-size: cover;
+    background-position: center;
 }
 header.upperLogo, h2{
     text-align:center;
-    color: #dedede;
-    font-weight: normal;
+    color: #ffffff;
+    font-weight:600;
 }
 header.upperLogo{
     padding-top: 30px;
@@ -44,18 +45,18 @@ section.form-container{
     width: 400px;
 }
 .form-content{
-    border:18px solid rgba(0, 0, 0, 0.3);
+    border:18px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: whitesmoke;
     background-clip: padding-box;
     padding: 15px;
 }
 .form-item{
-    border:1px solid #dedede;
+    border:1px solid #c6c6c6;
     border-radius: 3px;
     padding: 5px;
-    min-height: 24px;
-    line-height: 24px;
+    min-height: 30px;
+    line-height: 30px;
     margin-bottom: 15px;
 }
 .inputs{
@@ -66,21 +67,24 @@ section.form-container{
 label{
     display:none;
     font-size: 15px;
-    color: black;
+    color: #aeaeae;
 }
 label.visible{
     display:inline;
 }
+div.noborder {
+    border: none;
+}
 .btn{
     display: block;
     padding: 10px;
-    border: 1px solid green;
+    border: 1px solid #3c9900;
     border-radius: 3px;
-    background-color: lawngreen;
-    color: seashell;
+    background-image: linear-gradient(#a3d840, #7ec21f);
+    color: #fff;
     font-size: 18px;
-    font-weight:bold;
     cursor: pointer;
+    font-weight:600;
 }
 .btnshort{
     width: 40%;
@@ -90,15 +94,15 @@ label.visible{
     cursor: default;
 }
 .btnred{
-    background-color: #e93f3d;
-    border-color: red;
+    background-image: linear-gradient(#f55e6f, #f03745);
+    border-color: #a2202a;
 }
 .form-item span{
-    color: black;
+    color: #dedede;
     display:inline-block;
     width: 45px;
     text-align:center;
-    border-right: 1px solid black;
+    border-right: 1px solid #dedede;
     padding: 1px 1px 1px 0;
 }
 textarea.msg_1{
@@ -109,5 +113,11 @@ textarea.msg_1{
     resize: none;
 }
 footer{
-    padding: 50px 20px;
+    padding: 65px 20px;
+}
+@media only screen and (max-width: 1081px) {
+    .container {
+        width: 450px;
+        max-height: none;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>WeeklyDev1</title>
@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="upperLogo">
-        <img src="img/logo.png" class="logoimg">
+        <img src="img/logo.png" class="logoimg" alt="logo">
     </header>
     <div class="container flex">
         <section class="form-container">
@@ -47,8 +47,8 @@
                                 <option value="Poznań">Poznań</option>
                             </select>
                         </div>
-                        <div class="form-item">
-                            <input type="checkbox" id="register-terms">
+                        <div class="form-item noborder">
+                            <input type="checkbox" id="register-terms" required>
                             <label class="visible" for='register-terms'>I have read and accept the terms of use.</label>
                         </div>
                         <button class="btn" type="submit">Sign Up</button>
@@ -74,8 +74,8 @@
                         <label for="msg_1">Type your message</label>
                         <textarea class="inputs msg_1" id="msg_1" placeholder="Type your message..." required></textarea>
                     </div>
-                    <div class="form-item">
-                        <input type="checkbox" id="send-email">
+                    <div class="form-item  noborder">
+                        <input type="checkbox" id="send-email" required>
                         <label class="visible" for='send-email'>Send a copy to my email</label>
                     </div>
                     <button class="btn" type="submit">Send Email</button>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="flex row">
                             <div>
-                                <input type="checkbox" id="remember">
+                                <input type="checkbox" id="remember" required>
                                 <label class="visible" for='remember'>Remember me</label>
                             </div>
                             <button class="btn btnshort" type="submit">Sign In</button>
@@ -149,7 +149,7 @@
 
         <footer>
             <div class="lowerLogo">
-            <img src="img/logo2.png" class="logoimg">
+            <img src="img/logo2.png" class="logoimg" alt="logo">
             </div>
         </footer>
     </div>
