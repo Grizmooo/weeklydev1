@@ -115,10 +115,9 @@ textarea.msg_1{
 footer{
     padding: 65px 20px;
 }
-@media only screen and (max-width: 1081px) {
+@media only screen and (max-width: 960px) {
     .container {
         width: 600px;
         max-height: none;
     }
-
 }
