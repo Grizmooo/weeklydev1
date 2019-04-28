@@ -54,23 +54,73 @@ section.form-container{
 .form-item{
     border:1px solid #c6c6c6;
     border-radius: 3px;
-    padding: 5px;
-    min-height: 30px;
+    padding: 0 ;
+    height: 36px;
     line-height: 30px;
     margin-bottom: 15px;
 }
 .inputs{
-    border:none;
+    border: none;
     background: transparent;
     outline: 0;
+    padding: 3px 15px;
+    display:flex;
+    flex-grow:1;
+}
+.form-item span{
+    color: #dedede;
+    display:inline-block;
+    width: 45px;
+    text-align:center;
+    border-right: 1px solid #dedede;
+    padding: 3px 2px 3px 3px;
+}
+.inputs::placeholder, option, select{
+    font-size: 14px;
+    color: #aeaeae;
 }
 label{
     display:none;
+}
+select.inputs{
+    padding: 3px 12px;
+}
+label.checkbox{
+    display: inline;
     font-size: 15px;
     color: #aeaeae;
+    cursor:pointer;
 }
-label.visible{
-    display:inline;
+.checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    vertical-align: -3px;
+    padding: 3px;
+    margin: 0 0.4rem;
+    cursor:pointer;
+}
+.checkbox p {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    bottom: 1px;
+}
+.checkbox input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #7ec31f;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 300ms;
+}
+.checkbox input[type="checkbox"]:checked::before {
+    opacity: 1;
 }
 div.noborder {
     border: none;
@@ -97,13 +147,8 @@ div.noborder {
     background-image: linear-gradient(#f55e6f, #f03745);
     border-color: #a2202a;
 }
-.form-item span{
-    color: #dedede;
-    display:inline-block;
-    width: 45px;
-    text-align:center;
-    border-right: 1px solid #dedede;
-    padding: 1px 1px 1px 0;
+.form-item.textarea{
+    height: auto;
 }
 textarea.msg_1{
     height: 160px;
@@ -111,6 +156,7 @@ textarea.msg_1{
     box-sizing: border-box;
     overflow:hidden;
     resize: none;
+    padding: 10px 15px;
 }
 footer{
     padding: 65px 20px;

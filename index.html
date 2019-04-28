@@ -16,27 +16,27 @@
             <h2>Register Form</h2>
                 <div class="form-content">
                     <form class="flex">
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-user fa-lg"></i></span>
                             <label for="username_1">Username:</label>
                             <input class="inputs" type="text" id="username_1" placeholder="Username" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-lock fa-lg"></i></span>
                             <label for="pass_1">Password:</label>
                             <input class="inputs" type="password" id="pass_1" placeholder="Password" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-lock fa-lg"></i></span>
                             <label for="passrep_1">Confirm password:</label>
                             <input class="inputs" type="password" id="passrep_1" placeholder="Confirm password" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-envelope fa-lg"></i></span>
                             <label for="mail_1">Email:</label>
                             <input class="inputs" type="email" id="mail_1" placeholder="Email" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-map-marker-alt fa-lg"></i></span>
                             <label for="location">Location:</label>
                             <select class="inputs" id="location" required>
@@ -48,8 +48,10 @@
                             </select>
                         </div>
                         <div class="form-item noborder">
-                            <input type="checkbox" id="register-terms" required>
-                            <label class="visible" for='register-terms'>I have read and accept the terms of use.</label>
+                            <label class="checkbox" for='register-terms'>
+                                <input type="checkbox" id="register-terms" required>
+                                <p>I have read and accept the terms of use.</p>
+                            </label>
                         </div>
                         <button class="btn" type="submit">Sign Up</button>
                     </form>
@@ -60,23 +62,25 @@
             <h2>Send Email</h2>
             <div class="form-content">
                 <form class="flex">
-                    <div class="form-item">
+                    <div class="form-item flex">
                         <span><i class="fas fa-user fa-lg"></i></span>
                         <label for="name">Your name:</label>
                         <input class="inputs" type="text" id="name" placeholder="Your name" required>
                     </div>
-                    <div class="form-item">
+                    <div class="form-item flex">
                         <span><i class="fas fa-envelope fa-lg"></i></span>
                         <label for="mail_2">Your Email</label>
                         <input class="inputs" type="email" id="mail_2" placeholder="Your email" required>
                     </div>
-                    <div class="form-item">
+                    <div class="form-item textarea flex">
                         <label for="msg_1">Type your message</label>
                         <textarea class="inputs msg_1" id="msg_1" placeholder="Type your message..." required></textarea>
                     </div>
-                    <div class="form-item  noborder">
-                        <input type="checkbox" id="send-email" required>
-                        <label class="visible" for='send-email'>Send a copy to my email</label>
+                    <div class="form-item noborder">
+                        <label class="checkbox" for='send-email'>
+                            <input type="checkbox" id="send-email" required>
+                            <p>Send a copy to my email</p>
+                        </label>
                     </div>
                     <button class="btn" type="submit">Send Email</button>
                 </form>
@@ -87,20 +91,23 @@
             <h2>Sign In Form</h2>
                 <div class="form-content">
                     <form class="flex">
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-user fa-lg"></i></span>
                             <label for="username_2">Username:</label>
                             <input class="inputs" type="text" id="username_2" placeholder="Username" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-lock fa-lg "></i></span>
                             <label for="pass_2">Password:</label>
                             <input class="inputs" type="password" id="pass_2" placeholder="Password" required>
                         </div>
                         <div class="flex row">
                             <div>
-                                <input type="checkbox" id="remember" required>
-                                <label class="visible" for='remember'>Remember me</label>
+
+                                <label class="checkbox" for='remember'>
+                                    <input type="checkbox" id="remember" required>
+                                    <p>Remember me</p>
+                                </label>
                             </div>
                             <button class="btn btnshort" type="submit">Sign In</button>
                         </div>
@@ -112,12 +119,12 @@
             <h2>Recover Form</h2>
                 <div class="form-content">
                     <form class="flex">
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-envelope fa-lg"></i></span>
                             <label for="mail_3">Your Email</label>
                             <input class="inputs" type="email" id="mail_3" placeholder="Your email" required>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-mobile-alt fa-lg"></i></span>
                             <label for="phonenumber">Enter your Phone number</label>
                             <input class="inputs" type="text" id="phonenumber" placeholder="Enter your Phone number" required>
@@ -134,7 +141,7 @@
             <h2>Subscribe form</h2>
                 <div class="form-content">
                     <form class="flex">
-                        <div class="form-item">
+                        <div class="form-item flex">
                             <span><i class="fas fa-envelope fa-lg"></i></span>
                             <label for="mail_4">Your Email</label>
                             <input class="inputs" type="email" id="mail_4" placeholder="Your email" required>
