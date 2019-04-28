@@ -34,7 +34,7 @@ div.flex.row{
     margin-bottom: 5px;
 }
 .container{
-    width: 960px;
+    width: 1000px;
     margin:auto;
     min-height: 720px;
     max-height: 1300px;
@@ -42,7 +42,7 @@ div.flex.row{
     flex-flow: column wrap
 }
 section.form-container{
-    width: 400px;
+    width:40% ;
 }
 .form-content{
     border:18px solid rgba(0, 0, 0, 0.2);
@@ -120,4 +120,5 @@ footer{
         width: 600px;
         max-height: none;
     }
+
 }
