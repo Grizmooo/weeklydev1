@@ -117,10 +117,10 @@ footer{
 }
 @media only screen and (max-width: 1081px) {
     .container {
-        width: 90vw;
+        width: 450px;
         max-height: none;
     }
     section.form-container{
-        width:100% ;
+        width:95% ;
     }
 }
