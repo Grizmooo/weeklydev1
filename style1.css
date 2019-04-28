@@ -5,15 +5,21 @@ body{
     background-color: #fff;
     background: url('img/bg.png') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 40%;
 }
 header.upperLogo, h2{
     text-align:center;
+}
+h2{
     color: #ffffff;
-    font-weight:600;
+    font-weight:normal;
+    font-size:30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 header.upperLogo{
-    padding-top: 30px;
+    padding: 47px 0 0 80px ;
+
 }
 img.logoimg{
     opacity: 0.3;
@@ -49,15 +55,19 @@ section.form-container{
     border-radius: 5px;
     background-color: whitesmoke;
     background-clip: padding-box;
-    padding: 15px;
+    padding: 18px;
+    margin-bottom: 10px;
 }
 .form-item{
     border:1px solid #c6c6c6;
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 0 ;
     height: 36px;
     line-height: 30px;
     margin-bottom: 15px;
+}
+.form-item.flex:focus-within {
+    border: 1px solid #3c9900;
 }
 .inputs{
     border: none;
@@ -76,7 +86,7 @@ section.form-container{
     padding: 3px 2px 3px 3px;
 }
 .inputs::placeholder, option, select{
-    font-size: 14px;
+    font-size: 15px;
     color: #aeaeae;
 }
 label{
@@ -159,7 +169,7 @@ textarea.msg_1{
     padding: 10px 15px;
 }
 footer{
-    padding: 65px 20px;
+    padding: 30px 20px;
 }
 @media only screen and (max-width: 1081px) {
     .container {
