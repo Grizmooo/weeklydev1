@@ -171,6 +171,16 @@ textarea.msg_1{
 footer{
     padding: 30px 20px;
 }
+p#notsamepass{
+    margin: 0;
+    font-size: 12px;
+    padding: 0 0 0 67px;
+    position:relative;
+    top: -10px;
+    color: red;
+    font-weight:bold;
+    display:none;
+}
 @media only screen and (max-width: 1081px) {
     .container {
         width: 450px;

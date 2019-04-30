@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>WeeklyDev1</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="upperLogo">
@@ -24,13 +25,14 @@
                         <div class="form-item flex">
                             <span><i class="fas fa-lock fa-lg"></i></span>
                             <label for="pass_1">Password:</label>
-                            <input class="inputs" type="password" id="pass_1" placeholder="Password" required>
+                            <input class="inputs" type="password" id="pass_1" placeholder="Password" onchange="check_pass()" required>
                         </div>
                         <div class="form-item flex">
                             <span><i class="fas fa-lock fa-lg"></i></span>
                             <label for="passrep_1">Confirm password:</label>
-                            <input class="inputs" type="password" id="passrep_1" placeholder="Confirm password" required>
+                            <input class="inputs" type="password" id="passrep_1" placeholder="Confirm password" onchange="check_pass()" required>
                         </div>
+                            <p id="notsamepass">Passwords are not the same.</p>
                         <div class="form-item flex">
                             <span><i class="fas fa-envelope fa-lg"></i></span>
                             <label for="mail_1">Email:</label>
@@ -53,7 +55,7 @@
                                 <p>I have read and accept the terms of use.</p>
                             </label>
                         </div>
-                        <button class="btn" type="submit">Sign Up</button>
+                        <button id="firstformbtn" class="btn" type="submit">Sign Up</button>
                     </form>
                 </div>
         </section>
@@ -127,7 +129,7 @@
                         <div class="form-item flex">
                             <span><i class="fas fa-mobile-alt fa-lg"></i></span>
                             <label for="phonenumber">Enter your Phone number</label>
-                            <input class="inputs" type="text" id="phonenumber" placeholder="Enter your Phone number" required>
+                            <input class="inputs" type="tel" pattern="[0-9]{9}" id="phonenumber" placeholder="Enter your Phone number" required>
                         </div>
                         <div class="flex row">
                             <button class="btn btnshort" type="submit">Send</button>
